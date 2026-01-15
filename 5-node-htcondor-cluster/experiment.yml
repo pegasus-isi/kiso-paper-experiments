@@ -33,7 +33,7 @@ sites:
           number: 1
         - labels:
             - execute
-          site: HAWI
+          site: UCSD
           image: default_ubuntu_22
           flavour: big
           number: 3
@@ -55,7 +55,7 @@ sites:
         - labels:
             - v4
           kind: FABNetv4
-          site: HAWI
+          site: UCSD
           nic:
             kind: SharedNIC
             model: ConnectX-6
@@ -65,7 +65,10 @@ experiments:
     name: shell-experiment
     scripts:
       - labels:
-          - cm
+          - submit
         script: |
-          #!/bin/bash
-          echo PASS
+          echo "Condor Q"
+          condor_q
+
+          echo "Condor Status"
+          condor_status

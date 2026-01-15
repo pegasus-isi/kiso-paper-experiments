@@ -65,7 +65,10 @@ experiments:
     name: shell-experiment
     scripts:
       - labels:
-          - cm
+          - submit
         script: |
-          #!/bin/bash
-          echo PASS
+          echo "Condor Q"
+          condor_q
+
+          echo "Condor Status"
+          condor_status
