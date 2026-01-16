@@ -1,0 +1,18 @@
+Database version: '5.1.1' (sqlite:////home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001/plankifier-wf-0.stampede.db)
+Database version: '5.1.1' (sqlite:////home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001/plankifier-wf-0.stampede.db)
+Database version: '5.1.1' (sqlite:////home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001/plankifier-wf-0.stampede.db)
+
+************************************Summary*************************************
+
+ Submit Directory   : /home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001
+ Workflow Status    : success
+ Total jobs         :     12 (100.00%)
+ # jobs succeeded   :     12 (100.00%)
+ # jobs failed      :      0 (0.00%)
+ # jobs held        :      0 (0.00%)
+ # jobs unsubmitted :      0 (0.00%)
+
+**************************************Done**************************************
+
+pegasus-analyzer: end of status report
+

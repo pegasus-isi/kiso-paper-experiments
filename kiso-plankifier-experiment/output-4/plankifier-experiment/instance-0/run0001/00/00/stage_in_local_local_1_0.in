@@ -1,0 +1,13 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "count",
+   "id": 1,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "condorpool", "url": "file:///home/kiso/kiso-plankifier-experiment/bin/count.sh", "priority": 100 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/kiso/kiso-plankifier-experiment/scratch/kiso/pegasus/plankifier-wf/run0001/./count" }
+   ] }
+]

@@ -1,0 +1,260 @@
+000 (002.000.000) 2026-01-15 00:51:45 Job submitted from host: <129.114.108.231:9618?addrs=129.114.108.231-9618&alias=enos--o-compute-zen3-o--0&noUDP&sock=schedd_12461_c9bb>
+    DAG Node: create_dir_plankifier-wf_0_local
+    pool:local
+...
+000 (003.000.000) 2026-01-15 00:51:45 Job submitted from host: <129.114.108.231:9618?addrs=129.114.108.231-9618&alias=enos--o-compute-zen3-o--0&noUDP&sock=schedd_12461_c9bb>
+    DAG Node: stage_worker_local_plankifier-wf_0_local
+    pool:local
+...
+001 (003.000.000) 2026-01-15 00:51:49 Job executing on host: <129.114.108.231:9618?addrs=129.114.108.231-9618&alias=enos--o-compute-zen3-o--0&noUDP&sock=starter_12514_feb6_3>
+...
+001 (002.000.000) 2026-01-15 00:51:49 Job executing on host: <129.114.108.231:9618?addrs=129.114.108.231-9618&alias=enos--o-compute-zen3-o--0&noUDP&sock=starter_12514_feb6_2>
+...
+005 (002.000.000) 2026-01-15 00:51:51 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+005 (003.000.000) 2026-01-15 00:51:52 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+000 (004.000.000) 2026-01-15 00:52:05 Job submitted from host: <129.114.108.231:9618?addrs=129.114.108.231-9618&alias=enos--o-compute-zen3-o--0&noUDP&sock=schedd_12461_c9bb>
+    DAG Node: stage_in_local_local_1_0
+    pool:local
+...
+000 (005.000.000) 2026-01-15 00:52:05 Job submitted from host: <129.114.108.231:9618?addrs=129.114.108.231-9618&alias=enos--o-compute-zen3-o--0&noUDP&sock=schedd_12461_c9bb>
+    DAG Node: plankifier_ID0000001
+    pool:condorpool
+...
+001 (004.000.000) 2026-01-15 00:52:05 Job executing on host: <129.114.108.231:9618?addrs=129.114.108.231-9618&alias=enos--o-compute-zen3-o--0&noUDP&sock=starter_12514_feb6_4>
+...
+005 (004.000.000) 2026-01-15 00:52:07 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+040 (005.000.000) 2026-01-15 00:52:26 Started transferring input files
+	Transferring to host: <100.64.113.239:9618?CCBID=129.114.108.231:9618%3faddrs%3d129.114.108.231-9618%26alias%3denos--o-compute-zen3-o--0%26noUDP%26sock%3dcollector#1&PrivNet=zun-44cdb6ea-c330-4fba-b146-e3b847024039-846f5bfdcd-ng597&addrs=100.64.113.239-9618&alias=zun-44cdb6ea-c330-4fba-b146-e3b847024039-846f5bfdcd-ng597&noUDP&sock=slot1_1_1835_ac64_1>
+...
+040 (005.000.000) 2026-01-15 00:52:28 Finished transferring input files
+...
+001 (005.000.000) 2026-01-15 00:52:28 Job executing on host: <100.64.113.239:9618?CCBID=129.114.108.231:9618%3faddrs%3d129.114.108.231-9618%26alias%3denos--o-compute-zen3-o--0%26noUDP%26sock%3dcollector#1&PrivNet=zun-44cdb6ea-c330-4fba-b146-e3b847024039-846f5bfdcd-ng597&addrs=100.64.113.239-9618&alias=zun-44cdb6ea-c330-4fba-b146-e3b847024039-846f5bfdcd-ng597&noUDP&sock=startd_790_73e8>
+	SlotName: slot1_1@zun-44cdb6ea-c330-4fba-b146-e3b847024039-846f5bfdcd-ng597
+	CondorScratchDir = "/var/lib/condor/execute/dir_2625"
+	Cpus = 1
+	Disk = 14337
+	GPUs = 0
+	Memory = 128
+...
+006 (005.000.000) 2026-01-15 00:52:36 Image size of job updated: 2
+	4  -  MemoryUsage of job (MB)
+	3836  -  ResidentSetSize of job (KB)
+...
+006 (005.000.000) 2026-01-15 00:53:35 Image size of job updated: 2962304
+	702  -  MemoryUsage of job (MB)
+	718060  -  ResidentSetSize of job (KB)
+...
+040 (005.000.000) 2026-01-15 00:53:36 Started transferring output files
+...
+040 (005.000.000) 2026-01-15 00:53:36 Finished transferring output files
+...
+005 (005.000.000) 2026-01-15 00:53:36 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:02:08, Sys 0 00:00:04  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:02:08, Sys 0 00:00:04  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	34121  -  Run Bytes Sent By Job
+	12548439  -  Run Bytes Received By Job
+	34121  -  Total Bytes Sent By Job
+	12548439  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :     3.61        1         1 
+	   Disk (KB)            : 88966       12500     14337 
+	   GPUs                 :                           0 
+	   Memory (MB)          :   702           1       128 
+	   TimeExecute (s)      :    68                       
+	   TimeSlotBusy (s)     :    70                       
+...
+000 (006.000.000) 2026-01-15 00:53:50 Job submitted from host: <129.114.108.231:9618?addrs=129.114.108.231-9618&alias=enos--o-compute-zen3-o--0&noUDP&sock=schedd_12461_c9bb>
+    DAG Node: stage_out_local_local_0_0
+    pool:local
+...
+000 (007.000.000) 2026-01-15 00:53:50 Job submitted from host: <129.114.108.231:9618?addrs=129.114.108.231-9618&alias=enos--o-compute-zen3-o--0&noUDP&sock=schedd_12461_c9bb>
+    DAG Node: count_ID0000002
+    pool:condorpool
+...
+001 (006.000.000) 2026-01-15 00:53:50 Job executing on host: <129.114.108.231:9618?addrs=129.114.108.231-9618&alias=enos--o-compute-zen3-o--0&noUDP&sock=starter_12514_feb6_6>
+...
+040 (007.000.000) 2026-01-15 00:53:50 Started transferring input files
+	Transferring to host: <129.114.108.231:9618?addrs=129.114.108.231-9618&alias=enos--o-compute-zen3-o--0&noUDP&sock=slot1_1_12512_95f6_3>
+...
+040 (007.000.000) 2026-01-15 00:53:51 Finished transferring input files
+...
+001 (007.000.000) 2026-01-15 00:53:51 Job executing on host: <129.114.108.231:9618?addrs=129.114.108.231-9618&alias=enos--o-compute-zen3-o--0&noUDP&sock=startd_12461_c9bb>
+	SlotName: slot1_1@enos--o-compute-zen3-o--0
+	CondorScratchDir = "/var/lib/condor/execute/dir_14769"
+	Cpus = 1
+	Disk = 14336
+	GPUs = 0
+	Memory = 128
+...
+006 (007.000.000) 2026-01-15 00:53:52 Image size of job updated: 348
+	0  -  MemoryUsage of job (MB)
+	0  -  ResidentSetSize of job (KB)
+...
+040 (007.000.000) 2026-01-15 00:53:52 Started transferring output files
+...
+040 (007.000.000) 2026-01-15 00:53:52 Finished transferring output files
+...
+005 (007.000.000) 2026-01-15 00:53:52 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	6351  -  Run Bytes Sent By Job
+	12561738  -  Run Bytes Received By Job
+	6351  -  Total Bytes Sent By Job
+	12561738  -  Total Bytes Received By Job
+	Partitionable Resources :    Usage  Request Allocated 
+	   Cpus                 :        0        1         1 
+	   Disk (KB)            :    12292    12500     14336 
+	   GPUs                 :                           0 
+	   Memory (MB)          :        0        1       128 
+	   TimeExecute (s)      :        1                    
+	   TimeSlotBusy (s)     :        2                    
+...
+005 (006.000.000) 2026-01-15 00:53:53 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+000 (008.000.000) 2026-01-15 00:54:05 Job submitted from host: <129.114.108.231:9618?addrs=129.114.108.231-9618&alias=enos--o-compute-zen3-o--0&noUDP&sock=schedd_12461_c9bb>
+    DAG Node: clean_up_local_level_3_0
+    pool:local
+...
+000 (009.000.000) 2026-01-15 00:54:05 Job submitted from host: <129.114.108.231:9618?addrs=129.114.108.231-9618&alias=enos--o-compute-zen3-o--0&noUDP&sock=schedd_12461_c9bb>
+    DAG Node: stage_out_local_local_1_0
+    pool:local
+...
+000 (010.000.000) 2026-01-15 00:54:05 Job submitted from host: <129.114.108.231:9618?addrs=129.114.108.231-9618&alias=enos--o-compute-zen3-o--0&noUDP&sock=schedd_12461_c9bb>
+    DAG Node: register_local_0_0
+    pool:local
+...
+001 (008.000.000) 2026-01-15 00:54:05 Job executing on host: <129.114.108.231:9618?addrs=129.114.108.231-9618&alias=enos--o-compute-zen3-o--0&noUDP&sock=starter_12514_feb6_8>
+...
+001 (009.000.000) 2026-01-15 00:54:06 Job executing on host: <129.114.108.231:9618?addrs=129.114.108.231-9618&alias=enos--o-compute-zen3-o--0&noUDP&sock=starter_12514_feb6_9>
+...
+001 (010.000.000) 2026-01-15 00:54:06 Job executing on host: <129.114.108.231:9618?addrs=129.114.108.231-9618&alias=enos--o-compute-zen3-o--0&noUDP&sock=starter_12514_feb6_10>
+...
+005 (010.000.000) 2026-01-15 00:54:08 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:03, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+005 (009.000.000) 2026-01-15 00:54:08 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+005 (008.000.000) 2026-01-15 00:54:10 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+000 (011.000.000) 2026-01-15 00:54:20 Job submitted from host: <129.114.108.231:9618?addrs=129.114.108.231-9618&alias=enos--o-compute-zen3-o--0&noUDP&sock=schedd_12461_c9bb>
+    DAG Node: clean_up_local_level_4_0
+    pool:local
+...
+000 (012.000.000) 2026-01-15 00:54:20 Job submitted from host: <129.114.108.231:9618?addrs=129.114.108.231-9618&alias=enos--o-compute-zen3-o--0&noUDP&sock=schedd_12461_c9bb>
+    DAG Node: register_local_1_0
+    pool:local
+...
+001 (011.000.000) 2026-01-15 00:54:21 Job executing on host: <129.114.108.231:9618?addrs=129.114.108.231-9618&alias=enos--o-compute-zen3-o--0&noUDP&sock=starter_12514_feb6_11>
+...
+001 (012.000.000) 2026-01-15 00:54:21 Job executing on host: <129.114.108.231:9618?addrs=129.114.108.231-9618&alias=enos--o-compute-zen3-o--0&noUDP&sock=starter_12514_feb6_12>
+...
+005 (012.000.000) 2026-01-15 00:54:23 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:03, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+005 (011.000.000) 2026-01-15 00:54:23 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+000 (013.000.000) 2026-01-15 00:54:35 Job submitted from host: <129.114.108.231:9618?addrs=129.114.108.231-9618&alias=enos--o-compute-zen3-o--0&noUDP&sock=schedd_12461_c9bb>
+    DAG Node: cleanup_plankifier-wf_0_local
+    pool:local
+...
+001 (013.000.000) 2026-01-15 00:54:35 Job executing on host: <129.114.108.231:9618?addrs=129.114.108.231-9618&alias=enos--o-compute-zen3-o--0&noUDP&sock=starter_12514_feb6_13>
+...
+005 (013.000.000) 2026-01-15 00:54:37 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...

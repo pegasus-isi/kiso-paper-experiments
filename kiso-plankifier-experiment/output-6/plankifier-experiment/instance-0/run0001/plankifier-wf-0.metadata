@@ -1,0 +1,23 @@
+{
+  "root_workflow_uuid": "0353b4dc-d03e-4e6c-a173-fb09e4bf1fdf",
+  "workflow_uuid": "0353b4dc-d03e-4e6c-a173-fb09e4bf1fdf",
+  "wf_metadata": {
+    "wf.api": "python"
+  },
+  "graph": {
+    "jobs": {
+      "register_local_1_0": {},
+      "register_local_0_0": {},
+      "stage_out_local_local_1_0": {},
+      "clean_up_local_level_3_0": {},
+      "cleanup_plankifier-wf_0_local": {},
+      "plankifier_ID0000001": {},
+      "count_ID0000002": {},
+      "stage_out_local_local_0_0": {},
+      "create_dir_plankifier-wf_0_local": {},
+      "clean_up_local_level_4_0": {},
+      "stage_in_local_local_1_0": {},
+      "stage_worker_local_plankifier-wf_0_local": {}
+    }
+  }
+}

@@ -1,0 +1,27 @@
+
+# Job instance statistics per day:
+#   the number of job instances run, total runtime sorted by day
+# Invocation statistics per day:
+#   the number of invocations , total runtime sorted by day
+# Job instance statistics by host per day:
+#   the number of job instance run, total runtime on each host sorted by day
+# Invocation by host per day:
+#   the number of invocations, total runtime on each host sorted by day
+
+# Job instances statistics per day
+Date[YYYY-MM-DD]              Count               Runtime (sec)       
+2026-01-15                    12                  97.0                
+
+# Invocation statistics run per day
+Date[YYYY-MM-DD]              Count               Runtime (sec)       
+2026-01-15                    24                  82.399              
+
+# Job instances statistics on host per day
+Date[YYYY-MM-DD]       Host                          Count     Runtime (sec)       
+2026-01-15             enos--o-compute-zen3-o--0     11        28.0                
+2026-01-15             zun-9c4b80e9-a4aa-4ce4-baa5-14febb36e883-67464d79c-7qqdb1         69.0                
+
+# Invocation statistics on host per day
+Date[YYYY-MM-DD]       Host                          Count     Runtime (sec)       
+2026-01-15             enos--o-compute-zen3-o--0     22        24.122              
+2026-01-15             zun-9c4b80e9-a4aa-4ce4-baa5-14febb36e883-67464d79c-7qqdb2         58.277              

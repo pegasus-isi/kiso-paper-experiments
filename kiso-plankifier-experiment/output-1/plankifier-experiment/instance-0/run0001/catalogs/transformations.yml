@@ -1,0 +1,22 @@
+x-pegasus:
+  apiLang: python
+  createdBy: kiso
+  createdOn: 01-15-26T00:22:53Z
+pegasus: 5.0.4
+transformations:
+- name: plankifier
+  sites:
+  - name: condorpool
+    pfn: /srv/plankifier/predict.py
+    type: installed
+- name: count
+  sites:
+  - name: condorpool
+    pfn: /home/kiso/kiso-plankifier-experiment/bin/count.sh
+    type: stageable
+- namespace: pegasus
+  name: worker
+  sites:
+  - name: condorpool
+    pfn: https://download.pegasus.isi.edu/pegasus/5.1.1/pegasus-worker-5.1.1-x86_64_rhel_8.tar.gz
+    type: stageable

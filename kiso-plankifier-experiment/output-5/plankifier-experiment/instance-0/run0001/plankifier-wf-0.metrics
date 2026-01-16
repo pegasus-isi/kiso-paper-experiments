@@ -1,0 +1,42 @@
+{
+  "client": "pegasus-plan",
+  "version": "5.1.1",
+  "wf_api": "python",
+  "type": "metrics",
+  "start_time": 1.768525311732E9,
+  "end_time": 1.768525316272E9,
+  "duration": 4.54,
+  "exitcode": 0,
+  "root_wf_uuid": "07f06090-75b8-4786-bab3-159806612d3a",
+  "wf_uuid": "07f06090-75b8-4786-bab3-159806612d3a",
+  "data_config": "condorio",
+  "planner_args": "--output-sites local --cleanup inplace --submit workflow.yml --json ",
+  "uses_pmc": false,
+  "wf_metrics": {
+    "compute_tasks": 2,
+    "dax_tasks": 0,
+    "dag_tasks": 0,
+    "total_tasks": 2,
+    "deleted_tasks": 0,
+    "dax_input_files": 0,
+    "dax_inter_files": 1,
+    "dax_output_files": 1,
+    "dax_total_files": 2,
+    "compute_jobs": 2,
+    "clustered_jobs": 0,
+    "si_tx_jobs": 2,
+    "so_tx_jobs": 2,
+    "inter_tx_jobs": 0,
+    "reg_jobs": 2,
+    "cleanup_jobs": 3,
+    "create_dir_jobs": 1,
+    "dax_jobs": 0,
+    "dag_jobs": 0,
+    "chmod_jobs": 0,
+    "total_jobs": 12
+  },
+  "app_metrics": {
+    "name": "plankifier-wf"
+  }
+}
+

@@ -1,0 +1,21 @@
+# Integrity Statistics Breakdown
+# Type           - the type of integrity metric.
+                check - means checksum was compared for a file,
+                compute - means a checksum was generated for a file
+# File Type      - the type of file: input or output from a job perspective
+# Count          - the number of times done
+# Total Duration - sum of duration in seconds for the 'count' number
+                of records matching the particular type,
+                file-type combo
+
+# 8932fb9b-ba6a-4fb9-b068-c32dfa4b997b (plankifier-wf)
+Type       File Type       Count      Total Duration            
+check      input           2          0.032                     
+check      output          2          0.198                     
+compute    output          3          0.023                     
+
+# All (All)
+Type       File Type       Count      Total Duration            
+check      input           2          0.032                     
+check      output          2          0.198                     
+compute    output          3          0.023                     

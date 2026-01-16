@@ -1,0 +1,14 @@
+[
+  {
+    "_id": "count",
+    "_type": "file",
+    "_attributes": {
+      "user": "kiso",
+      "size": "151",
+      "ctime": "2026-01-15T00:21:46.237137",
+      "checksum.type": "sha256",
+      "checksum.value": "795584fdd09c5b4ca3bea717f29ea09838ddc6d2bb9ed43ffb1b35d4d41539c2",
+      "checksum.timing": "0.023"
+    }
+  }
+]

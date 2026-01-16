@@ -1,0 +1,16 @@
+2026-01-16 02:26:37: PegasusLite: version 5.1.1
+2026-01-16 02:26:37: Executing on host zun-7af547e3-c2d5-4ec9-a086-df99d78edd71-586db5bf4d-4prbx IP=100.64.75.37
+
+########################[Pegasus Lite] Setting up workdir ########################
+2026-01-16 02:26:37: Not creating a new work directory as it is already set to /var/lib/condor/execute/dir_2916
+
+##############[Pegasus Lite] Figuring out the worker package to use ##############
+2026-01-16 02:26:38: The job contained a Pegasus worker package
+2026-01-16 02:26:38: Warning: worker package pegasus-worker-5.1.1-x86_64_rhel_8.tar.gz does not seem to match the system aarch64_rhel_8
+2026-01-16 02:26:38: Checking for untar worker package in /var/lib/condor/execute/dir_2916
+2026-01-16 02:26:38: Downloading Pegasus worker package from http://download.pegasus.isi.edu/pegasus/5.1.1/pegasus-worker-5.1.1-aarch64_rhel_8.tar.gz
+
+##################### Checking file integrity for input files #####################
+
+######################[Pegasus Lite] Executing the user task ######################
+PegasusLite: exitcode 0

@@ -1,0 +1,179 @@
+- invocation: True
+  version: 3.0
+  start: 2026-01-16T01:49:48.969+00:00
+  duration: 2.282
+  transformation: "pegasus::dirmanager"
+  derivation: "null"
+  resource: "local"
+  wf-label: "plankifier-wf"
+  wf-stamp: "2026-01-16T01:49:38+00:00"
+  interface: enp161s0f0
+  hostaddr: 10.52.0.19
+  hostname: enos--o-compute-zen3-o--0
+  pid: 13233
+  uid: 1011
+  user: kiso
+  gid: 1011
+  group: kiso
+  umask: 0o0022
+  mainjob:
+    start: 2026-01-16T01:49:49.124+00:00
+    duration: 2.127
+    pid: 13237
+    usage:
+      utime: 0.111
+      stime: 0.016
+      maxrss: 20088
+      minflt: 7820
+      majflt: 0
+      nswap: 0
+      inblock: 0
+      outblock: 16
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 66
+      nivcsw: 6
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /usr/bin/pegasus-transfer
+      mode: 0o100755
+      size: 2824
+      inode: 93221
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2025-05-29T18:42:15+00:00
+      atime: 2026-01-16T01:21:57+00:00
+      ctime: 2026-01-16T01:22:04+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    argument_vector:
+    procs:
+  jobids:
+    condor: 2.0
+  cwd: /var/spool/condor/local_univ_execute/dir_13229
+  usage:
+    utime: 0.017
+    stime: 0.124
+    maxrss: 2816
+    minflt: 156
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 2
+    nivcsw: 2
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: enos--o-compute-zen3-o--0
+    uname_release: 5.15.0-144-generic
+    uname_machine: x86_64
+    ram_total: 262470756
+    ram_free: 257626736
+    ram_shared: 5944
+    ram_buffer: 93988
+    swap_total: 0
+    swap_free: 0
+    cpu_count: 256
+    cpu_speed: 1500
+    cpu_vendor: AuthenticAMD
+    cpu_model: AMD EPYC 7763 64-Core Processor
+    load_min1: 0.14
+    load_min5: 0.03
+    load_min15: 0.03
+    procs_total: 2190
+    procs_running: 2
+    procs_sleeping: 1102
+    procs_other: 1086
+    procs_vmsize: 6169376
+    procs_rss: 578532
+    task_total: 2240
+    task_running: 2
+    task_sleeping: 1152
+    task_other: 1086
+  files:
+    stdin:
+      descriptor_number: 0
+      mode: 0o10600
+      size: 0
+      inode: 197995
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-01-16T01:49:48+00:00
+      atime: 2026-01-16T01:49:48+00:00
+      ctime: 2026-01-16T01:49:48+00:00
+      uid: 1011
+      user: kiso
+      gid: 1011
+      group: kiso
+    stdout:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_13229/ks.out.kKiZry
+      descriptor: 3
+      mode: 0o100600
+      size: 0
+      inode: 2088030
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-01-16T01:49:49+00:00
+      atime: 2026-01-16T01:49:49+00:00
+      ctime: 2026-01-16T01:49:49+00:00
+      uid: 1011
+      user: kiso
+      gid: 1011
+      group: kiso
+    stderr:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_13229/ks.err.E0qDAo
+      descriptor: 4
+      mode: 0o100600
+      size: 896
+      inode: 2088031
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-01-16T01:49:51+00:00
+      atime: 2026-01-16T01:49:49+00:00
+      ctime: 2026-01-16T01:49:51+00:00
+      uid: 1011
+      user: kiso
+      gid: 1011
+      group: kiso
+      data_truncated: false
+      data: |
+        2026-01-16 01:49:49,216    INFO:  Reading URL pairs from stdin
+        2026-01-16 01:49:49,217    INFO:  1 transfers loaded
+        2026-01-16 01:49:49,217    INFO:  PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/bin:/usr/bin:/usr/local/bin:/opt/local/bin
+        2026-01-16 01:49:49,217    INFO:  LD_LIBRARY_PATH=
+        2026-01-16 01:49:49,228    INFO:  --------------------------------------------------------------------------------
+        2026-01-16 01:49:49,228    INFO:  Starting transfers - attempt 1
+        2026-01-16 01:49:51,230    INFO:  /bin/mkdir -p '/home/kiso/kiso-plankifier-experiment/scratch/kiso/pegasus/plankifier-wf/run0001' 
+        2026-01-16 01:49:51,238    INFO:  --------------------------------------------------------------------------------
+        2026-01-16 01:49:51,238    INFO:  Stats: no local files in the transfer set
+        2026-01-16 01:49:51,238    INFO:  All transfers completed successfully.
+        
+    metadata:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_13229/ks.meta.f8c57y
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 2088032
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-01-16T01:49:49+00:00
+      atime: 2026-01-16T01:49:49+00:00
+      ctime: 2026-01-16T01:49:49+00:00
+      uid: 1011
+      user: kiso
+      gid: 1011
+      group: kiso

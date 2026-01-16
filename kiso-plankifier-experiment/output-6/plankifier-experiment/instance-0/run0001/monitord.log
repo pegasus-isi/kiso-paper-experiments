@@ -1,0 +1,30 @@
+2026-01-16 01:49:43,938:INFO:pegasus-monitord(58): pegasus-monitord starting - pid 13054 
+2026-01-16 01:49:43,941:INFO:pegasus-monitord(456): Final Command line options are: ['-N', 'plankifier-wf-0.dag.dagman.out']
+2026-01-16 01:49:43,942:INFO:Pegasus.monitoring.event_output(628): Connecting workflow event sink to sqlite:////home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001/plankifier-wf-0.stampede.db
+Pegasus database was successfully created.
+Database version: '5.1.1' (sqlite:////home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001/plankifier-wf-0.stampede.db)
+2026-01-16 01:49:44,202:INFO:Pegasus.monitoring.event_output(702): output type=DB namespace=stampede. name=sqlite:////home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001/plankifier-wf-0.stampede.db
+2026-01-16 01:49:44,202:INFO:Pegasus.monitoring.event_output(628): Connecting workflow event sink to sqlite:////home/kiso/.pegasus/workflow.db
+Database version: '5.1.1' (sqlite:////home/kiso/.pegasus/workflow.db)
+2026-01-16 01:49:44,429:INFO:Pegasus.monitoring.event_output(702): output type=DB namespace=dashboard. name=sqlite:////home/kiso/.pegasus/workflow.db
+2026-01-16 01:49:44,429:INFO:pegasus-monitord(1251): monitord started in fast start mode
+2026-01-16 01:49:44,436:INFO:Pegasus.monitoring.workflow(458): cannot open state file /home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001/monitord.info, continuing without state...
+2026-01-16 01:49:44,436:INFO:Pegasus.monitoring.workflow(1146): creating new file /home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001/jobstate.log
+2026-01-16 01:49:44,436:INFO:Pegasus.monitoring.workflow(1154): Appending to existing jobstate.log replay_mode 0 previous_processed_line 0
+2026-01-16 01:49:44,436:INFO:Pegasus.monitoring.notifications(472): loading notifications from /home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001/plankifier-wf-0.notify
+2026-01-16 01:49:44,500:INFO:Pegasus.monitoring.workflow(203): Parsing DAG file /home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001/plankifier-wf-0.dag
+2026-01-16 01:49:44,501:INFO:pegasus-monitord(978): Using DAGMan version 24.12.15 241215
+2026-01-16 01:49:44,502:INFO:pegasus-monitord(961): using dag plankifier-wf-0.dag
+2026-01-16 01:49:44,502:INFO:Pegasus.monitoring.workflow(809): DAGMan starting with condor id 1.0
+2026-01-16 01:56:30,299:INFO:Pegasus.monitoring.workflow(2468): Populating locations corresponding to succeeded registration job  /home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001/00/00/register_local_0_0.in 
+2026-01-16 01:56:45,416:INFO:Pegasus.monitoring.workflow(2468): Populating locations corresponding to succeeded registration job  /home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001/00/00/register_local_1_0.in 
+2026-01-16 01:57:00,492:INFO:pegasus-monitord(931): DAGMan plankifier-wf-0.dag finished with exit code 0
+2026-01-16 01:57:01,498:INFO:pegasus-monitord(1431): workflow /home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001/plankifier-wf-0.dag.dagman.out ended
+2026-01-16 01:57:01,498:INFO:Pegasus.monitoring.workflow(1376): recovery file deleted: /home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001/monitord.recover
+2026-01-16 01:57:01,498:INFO:pegasus-monitord(1669): finishing workflow: /home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001/plankifier-wf-0.dag.dagman.out
+2026-01-16 01:57:01,498:INFO:pegasus-monitord(1723): finishing notifications...
+2026-01-16 01:57:01,498:INFO:pegasus-monitord(1731): monitord process 13054 exiting with 0
+2026-01-16 01:57:01,499:INFO:pegasus-monitord(198): DB flushing beginning
+2026-01-16 01:57:01,499:INFO:Pegasus.db.workflow_loader.WorkflowLoader(1244): Executing final flush
+2026-01-16 01:57:01,518:INFO:Pegasus.db.dashboard_loader.DashboardLoader(397): Executing final flush
+2026-01-16 01:57:01,518:INFO:pegasus-monitord(214): DB flushing ended

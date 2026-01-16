@@ -1,0 +1,337 @@
+- invocation: True
+  version: 3.0
+  start: 2026-01-15T00:23:47.897+00:00
+  duration: 59.975
+  transformation: "plankifier"
+  derivation: "ID0000001"
+  resource: "condorpool"
+  wf-label: "plankifier-wf"
+  wf-stamp: "2026-01-15T00:22:53+00:00"
+  interface: eth0
+  hostaddr: 100.64.93.167
+  hostname: zun-34f1adf1-5f84-451f-a8e3-ddb9d66af1e2-6794bbd9b-pxzdg
+  pid: 2648
+  uid: 65534
+  user: nobody
+  gid: 65534
+  group: nobody
+  umask: 0o0022
+  mainjob:
+    start: 2026-01-15T00:23:47.903+00:00
+    duration: 59.968
+    pid: 2649
+    usage:
+      utime: 160.671
+      stime: 5.066
+      maxrss: 714168
+      minflt: 303135
+      majflt: 4
+      nswap: 0
+      inblock: 10120
+      outblock: 200
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 559
+      nivcsw: 68220
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /srv/plankifier/predict.py
+      mode: 0o100755
+      size: 17843
+      inode: 60935
+      nlink: 1
+      blksize: 4096
+      blocks: 40
+      mtime: 2026-01-15T00:22:12+00:00
+      atime: 2026-01-15T00:22:12+00:00
+      ctime: 2026-01-15T00:22:56+00:00
+      uid: 1000
+      user: kiso
+      gid: 1000
+      group: kiso
+    argument_vector:
+      - "-modelfullnames"
+      - "/srv/plankifier/trained-models/conv2/keras_model.h5"
+      - "-weightnames"
+      - "/srv/plankifier/trained-models/conv2/bestweights.hdf5"
+      - "-testdirs"
+      - "/srv/plankifier/camera-images"
+      - "-thresholds"
+      - "0.6"
+      - "-ensMethods"
+      - "unanimity"
+      - "-predname"
+      - "./predict"
+    procs:
+  jobids:
+    condor: 5.0
+  cwd: /var/lib/condor/execute/dir_2461
+  usage:
+    utime: 0.000
+    stime: 0.010
+    maxrss: 2004
+    minflt: 169
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 1
+    nivcsw: 8
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: zun-34f1adf1-5f84-451f-a8e3-ddb9d66af1e2-6794bbd9b-pxzdg
+    uname_release: 6.12.32-v8
+    uname_machine: aarch64
+    ram_total: 7624008
+    ram_free: 77664
+    ram_shared: 32928
+    ram_buffer: 112484
+    swap_total: 3812000
+    swap_free: 3810976
+    cpu_count: 4
+    cpu_speed: 0
+    cpu_vendor: 
+    cpu_model: 
+    load_min1: 1.97
+    load_min5: 2.76
+    load_min15: 2.72
+    procs_total: 10
+    procs_running: 2
+    procs_sleeping: 8
+    procs_vmsize: 284204
+    procs_rss: 77848
+    task_total: 10
+    task_running: 2
+    task_sleeping: 8
+  files:
+    predict_unanimityabs0.6.txt:
+      lfn: "predict_unanimityabs0.6.txt"
+      file_name: /var/lib/condor/execute/dir_2461/predict_unanimityabs0.6.txt
+      mode: 0o100644
+      size: 12450
+      inode: 404568
+      nlink: 1
+      blksize: 4096
+      blocks: 32
+      mtime: 2026-01-15T00:24:46+00:00
+      atime: 2026-01-15T00:24:46+00:00
+      ctime: 2026-01-15T00:24:46+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nobody
+      output: True
+      sha256: b4820338219f7507f8eef9379482a4c1148838905c15c2def1d9209d63c05dae
+      checksum_timing: 0.00
+    stdin:
+      file_name: /dev/null
+      mode: 0o20666
+      size: 0
+      inode: 6
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-01-15T00:07:33+00:00
+      atime: 2026-01-15T00:07:33+00:00
+      ctime: 2026-01-15T00:07:33+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    stdout:
+      temporary_name: /var/lib/condor/execute/dir_2461/ks.out.bvDLyy
+      descriptor: 3
+      mode: 0o100600
+      size: 13026
+      inode: 402037
+      nlink: 1
+      blksize: 4096
+      blocks: 32
+      mtime: 2026-01-15T00:24:46+00:00
+      atime: 2026-01-15T00:23:47+00:00
+      ctime: 2026-01-15T00:24:46+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nobody
+      data_truncated: false
+      data: |
+        User asked for computing extra features, but we set it to False, because we only do it for `mixed` models
+        
+        1/4 [======>.......................] - ETA: 37s
+        2/4 [==============>...............] - ETA: 24s
+        3/4 [=====================>........] - ETA: 12s
+        4/4 [==============================] - ETA: 0s 
+        4/4 [==============================] - 41s 9s/step
+        
+        Method: unanimity 	Abs-threshold: 0.6
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1591617697738699-12363073948805-000879-036-1838-0-420-692.jpeg Unclassified
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1555333590581882-2239077085720-003809-005-1874-2350-48-68.jpeg Unclassified
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1526990634432033-1132487384954-002249-020-2386-964-104-168.jpeg asplanchna
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1559498410191177-6403834470952-000009-390-1444-1474-56-40.jpeg asterionella
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1526994879838086-1136732737852-044699-008-2524-1714-108-224.jpeg bosmina
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1559016175226108-5921607011798-001659-373-2066-154-48-48.jpeg fragilaria
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1526990424404067-1132277367497-000149-031-2294-1124-48-64.jpeg conochilus
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1556787726116896-3693191035844-001159-028-2754-0-104-40.jpeg daphnia
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1530538722171314-2252697054515-059091-201-1052-436-84-68.jpeg Unclassified
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1560863336987971-7768740687343-005269-135-2756-232-100-152.jpeg Unclassified
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1529846285786536-1560270388516-046749-143-2796-942-208-248.jpeg diaphanosoma
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1560416638915880-7322049300291-002289-042-1474-1914-32-48.jpeg Unclassified
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1582290247665314-3035762790682-002379-102-1162-320-40-52.jpeg dirt
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1527066751413444-1208603290035-059849-023-2376-626-228-156.jpeg filament
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1569405610760714-2587605614311-000009-438-1484-946-76-68.jpeg maybe_cyano
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1589537172865790-10282580280485-003629-004-2080-1940-112-96.jpeg aphanizomenon
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1588759575774780-9504995087319-003659-024-2044-48-212-192.jpeg fish
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1538179829600391-3862375191354-006199-175-1294-280-68-88.jpeg diaphanosoma
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1561453253604730-8358648732269-000439-238-1272-58-64-72.jpeg paradileptus
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1539129903975531-4812435522148-002949-113-1646-0-512-684.jpeg leptodora
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1561453225602137-8358620729941-000159-100-2080-1294-68-80.jpeg cyclops
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1526954364194122-1096217692678-071539-012-1612-1576-40-72.jpeg conochilus
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1582020367500068-2765886507992-003579-085-2068-204-44-68.jpeg dirt
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1555333324529641-2238811063607-001149-019-3154-1776-44-56.jpeg Unclassified
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1536152344028890-1834918551700-035339-054-2382-1138-48-40.jpeg Unclassified
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1588766491358218-9511910558556-000819-017-2092-616-92-168.jpeg daphnia_skins
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1526950020785409-1091874331633-028109-008-1784-1530-228-156.jpeg eudiaptomus
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1536022667859413-1705244249832-034579-003-2952-2218-48-28.jpeg daphnia
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1560416614902624-7322025298296-002049-024-1740-1952-56-28.jpeg Unclassified
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1526948066598996-1089920169192-008569-005-1268-2310-500-272.jpeg daphnia
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1555333647562566-2239134090459-004379-043-1018-734-28-60.jpeg asplanchna
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1538266025998460-3948570301262-004169-077-1324-1276-168-204.jpeg daphnia_skins
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1526951601924899-1093455463066-043919-029-2150-0-68-104.jpeg nauplius
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1526948725652431-1090579223977-015159-008-2182-1826-64-116.jpeg nauplius
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1526949708750775-1091562305696-024989-024-2218-20-500-440.jpeg eudiaptomus
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1542590110525581-8272590559790-045009-140-814-0-208-164.jpeg conochilus
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1533729731355439-5443663052884-001219-003-1340-2014-56-72.jpeg paradileptus
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1555333484605477-2238971076908-002749-000-1722-2410-44-80.jpeg bosmina
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1555333225521933-2238712055377-000159-056-1322-88-64-92.jpeg unknown_plankton
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1526953164074188-1095017592919-059539-017-3054-1132-176-156.jpeg cyclops
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1561453242658131-8358637731354-000329-048-1872-1790-56-80.jpeg cyclops
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1591776599581354-12521973458589-005899-027-2762-224-192-124.jpeg daphnia
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1530965678188814-2679647235975-008679-077-2194-978-824-776.jpeg fish
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1530447173145588-2161149304816-007629-028-3110-2254-208-345.jpeg fish
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1588759575774780-9504995087319-003659-025-1944-12-284-104.jpeg daphnia_skins
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1559498420193480-6403844471783-000109-076-988-2298-100-68.jpeg asplanchna
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1555333295581973-2238782061196-000859-000-900-2556-36-43.jpeg daphnia
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1526951580932222-1093434461320-043709-009-584-1640-84-88.jpeg asplanchna
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1526948227598243-1090081182577-010179-025-658-1240-40-52.jpeg daphnia
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1531183677897300-2897643968047-028679-135-646-1186-148-200.jpeg leptodora
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1563246012213830-10151382168050-000029-049-2360-1020-88-84.jpeg uroglena
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1538179277542653-3861823145465-000679-094-3456-1308-108-60.jpeg bosmina
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1526949766743419-1091620310518-025569-012-1548-1694-336-312.jpeg Unclassified
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1527169692413688-1311542772001-064819-019-2454-798-96-104.jpeg dinobryon
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1526948696648763-1090550221566-014869-018-924-906-524-716.jpeg daphnia
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1559016047199513-5921479001157-000379-180-1148-1458-44-32.jpeg fragilaria
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1536152565032349-1835139570073-037549-027-1968-1546-32-52.jpeg bosmina
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1527121144385940-1262995433128-011339-001-1984-2382-64-72.jpeg Unclassified
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1528160652192679-497150860778-038419-003-1372-2330-36-44.jpeg asplanchna
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1555333386639658-2238873068761-001769-036-1854-852-36-72.jpeg bosmina
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1589551417892584-10296825096110-002079-001-2352-2332-92-96.jpeg aphanizomenon
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1539136233589211-4818765048294-066239-027-628-1760-928-676.jpeg fish
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1555333366558306-2238853067099-001569-057-1574-458-40-76.jpeg bosmina
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1539130706069138-4813237588820-010969-044-0-1914-1296-188.jpeg fish
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1526947464531326-1089318119146-002549-019-2166-472-240-216.jpeg daphnia
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1530579126767325-2293101110938-031169-127-2882-1226-256-180.jpeg diaphanosoma
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1528161694294127-498192947402-048839-019-1520-1730-56-28.jpeg daphnia
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1526948874674178-1090728236363-016649-023-1914-64-124-60.jpeg Unclassified
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1555333368565523-2238855067265-001589-000-1130-2300-72-80.jpeg Unclassified
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1555333325551246-2238812063690-001159-060-1758-800-60-48.jpeg diaphanosoma
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1559037613665367-5943045132594-000039-219-3382-1132-72-64.jpeg unknown_plankton
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1526951564928994-1093418459990-043549-006-2708-1506-44-52.jpeg unknown
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1526950808854584-1092662397142-035989-029-1042-384-84-72.jpeg Unclassified
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1531618265984949-3332226110846-054549-113-1898-1612-60-44.jpeg unknown_plankton
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1587449008808747-8194448040347-001989-011-1272-1498-260-224.jpeg copepod_skins
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1562231392403631-9136776580579-005829-179-72-88-148-436.jpeg Unclassified
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1529541912283734-1255901104299-027019-071-656-1014-40-76.jpeg eudiaptomus
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1526947882588679-1089736153896-006729-006-2164-1964-132-160.jpeg asplanchna
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1529242888564945-956881318286-060789-115-2540-310-60-112.jpeg kellikottia
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1529154310683986-868304612580-039009-103-1762-532-352-324.jpeg diaphanosoma
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1559498452178669-6403876474443-000429-421-1590-1530-48-84.jpeg synchaeta
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1526948087602056-1089941170938-008779-020-3268-256-108-112.jpeg cyclops
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1528161292264894-497790913983-044819-015-340-1290-40-36.jpeg fish
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1569405610760714-2587605614311-000009-082-1100-2068-56-36.jpeg fragilaria
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1559498436189836-6403860473113-000269-276-2044-1794-64-100.jpeg Unclassified
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1556787841132187-3693306045404-002309-001-2208-2398-144-140.jpeg copepod_skins
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1556787643119219-3693108028944-000329-013-1376-1274-292-264.jpeg conochilus
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1563246012213830-10151382168050-000029-054-3622-940-72-80.jpeg uroglena
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1554883371220292-1788864638659-001619-079-1898-332-280-276.jpeg conochilus
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1526990694420474-1132547389942-002849-028-1622-306-60-44.jpeg unknown_plankton
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1581966503115038-2712022953267-004939-066-1678-218-1172-528.jpeg filament
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1531355358026204-3069321674888-017479-080-888-1184-308-220.jpeg leptodora
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1580983506537391-1729040622541-002969-027-630-1024-108-100.jpeg Unclassified
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1529626015843011-1340003537417-004059-093-378-1238-52-44.jpeg fragilaria
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1531441283110606-3155245623211-012729-111-2026-0-832-1404.jpeg leptodora
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1527124685722435-1266536727501-046749-012-1294-1808-80-80.jpeg dinobryon
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1555333264546907-2238751058619-000549-001-2764-2248-64-60.jpeg fish
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1559498411166610-6403835471035-000019-151-1566-2018-36-44.jpeg nauplius
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1526948274619096-1090128186484-010649-031-2478-6-48-52.jpeg daphnia
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1526949277702744-1091131269866-020679-000-1994-2460-116-40.jpeg cyclops
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1527061901947099-1203753886924-011359-037-704-232-128-336.jpeg filament
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1559498410191177-6403834470952-000009-258-400-1758-52-72.jpeg bosmina
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1570543374882008-3725352526408-001649-138-1826-1500-72-56.jpeg cyclops
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1530447165150247-2161141304151-007549-072-2896-1096-200-348.jpeg fish
+        /srv/plankifier/camera-images/SPC-EAWAG-0P5X-1569405610760714-2587605614311-000009-108-2932-1988-60-44.jpeg Unclassified
+        
+    stderr:
+      temporary_name: /var/lib/condor/execute/dir_2461/ks.err.5LOO7W
+      descriptor: 4
+      mode: 0o100600
+      size: 1868
+      inode: 404559
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-01-15T00:24:04+00:00
+      atime: 2026-01-15T00:23:47+00:00
+      ctime: 2026-01-15T00:24:04+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nobody
+      data_truncated: false
+      data: |
+        Matplotlib created a temporary cache directory at /var/lib/condor/execute/dir_2461/matplotlib-d010382u because the default path (/.config/matplotlib) is not a writable directory; it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+        2026-01-15 00:24:04.429361: W tensorflow/tsl/framework/cpu_allocator_impl.cc:82] Allocation of 9613568 exceeds 10% of free system memory.
+        2026-01-15 00:24:04.445658: W tensorflow/tsl/framework/cpu_allocator_impl.cc:82] Allocation of 9613568 exceeds 10% of free system memory.
+        2026-01-15 00:24:04.457340: W tensorflow/tsl/framework/cpu_allocator_impl.cc:82] Allocation of 9613568 exceeds 10% of free system memory.
+        2026-01-15 00:24:04.665882: W tensorflow/tsl/framework/cpu_allocator_impl.cc:82] Allocation of 9613568 exceeds 10% of free system memory.
+        /srv/plankifier/src/helper_models.py:320: SyntaxWarning: assertion is always true, perhaps remove parentheses?
+          assert(self.modelkind!='feat', self.modelkind!='mixed', "We only augment with image data")
+        /srv/plankifier/src/helper_models.py:450: SyntaxWarning: assertion is always true, perhaps remove parentheses?
+          assert(len(input_shape[0]) == 3, "MixedModel: first dimension should be images, but has shape {}".format(input_shape[0]))
+        /srv/plankifier/src/helper_models.py:451: SyntaxWarning: assertion is always true, perhaps remove parentheses?
+          assert(len(input_shape[1]) == 1, "MixedModel: second dimension should be features, but has shape {}".format(input_shape[1]))
+        WARNING:tensorflow:Error in loading the saved optimizer state. As a result, your model is starting with a freshly initialized optimizer.
+        2026-01-15 00:24:04.800019: W tensorflow/tsl/framework/cpu_allocator_impl.cc:82] Allocation of 9613568 exceeds 10% of free system memory.
+        
+    metadata:
+      temporary_name: /var/lib/condor/execute/dir_2461/ks.meta.wWcZLu
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 404560
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-01-15T00:23:47+00:00
+      atime: 2026-01-15T00:23:47+00:00
+      ctime: 2026-01-15T00:23:47+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nobody
+
+---------------pegasus-multipart
+location:
+    geohash: dp3t
+    ip: 128.135.123.153
+    latitude: '41.6963'
+    longitude: '-87.6576'
+    organization: U-CHICAGO-AS
+    subdomain: cs.uchicago.edu

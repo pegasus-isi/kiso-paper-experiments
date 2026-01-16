@@ -1,0 +1,12 @@
+{"name": ".//00/00/create_dir_plankifier-wf_0_local.out", "timestamp": "2026-01-16T01:49:54.364389", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_worker_local_plankifier-wf_0_local.out", "timestamp": "2026-01-16T01:49:54.367765", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_in_local_local_1_0.out", "timestamp": "2026-01-16T01:50:09.505686", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/plankifier_ID0000001.out", "timestamp": "2026-01-16T01:55:54.979341", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/count_ID0000002.out", "timestamp": "2026-01-16T01:56:09.120999", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_out_local_local_0_0.out", "timestamp": "2026-01-16T01:56:09.124700", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/register_local_0_0.out", "timestamp": "2026-01-16T01:56:24.270333", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/clean_up_local_level_3_0.out", "timestamp": "2026-01-16T01:56:24.270759", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_out_local_local_1_0.out", "timestamp": "2026-01-16T01:56:24.272792", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/register_local_1_0.out", "timestamp": "2026-01-16T01:56:39.406982", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/clean_up_local_level_4_0.out", "timestamp": "2026-01-16T01:56:39.409773", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/cleanup_plankifier-wf_0_local.out", "timestamp": "2026-01-16T01:56:54.538947", "exitcode": 0, "app_exitcode": 0, "retry": 0, "std_out": "", "std_err": ""}

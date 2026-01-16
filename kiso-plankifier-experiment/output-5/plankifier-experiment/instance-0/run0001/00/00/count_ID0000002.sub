@@ -1,0 +1,44 @@
+######################################################################
+# PEGASUS WMS GENERATED SUBMIT FILE
+# DAG : plankifier-wf, Index = 0, Count = null
+# SUBMIT FILE NAME : count_ID0000002.sub
+######################################################################
+stream_error  = false
+stream_output = false
+environment = "LANG=en_US.UTF-8 CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=07f06090-75b8-4786-bab3-159806612d3a PEGASUS_WF_LABEL=plankifier-wf PEGASUS_DAG_JOB_ID=count_ID0000002 PEGASUS_SITE=condorpool"
++WantIOProxy = True
+error = /home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001//00/00/count_ID0000002.err
+executable = /home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001/00/00/count_ID0000002.sh
+initialdir = /home/kiso/kiso-plankifier-experiment/scratch/kiso/pegasus/plankifier-wf/run0001
+log = /home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001/plankifier-wf-0.log
+notification = NEVER
+output = /home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001//00/00/count_ID0000002.out
+periodic_release = False
+periodic_remove = (JobStatus == 5) && ((CurrentTime - EnteredCurrentStatus) > 1800)
+priority = 20
+should_transfer_files = YES
+submit_event_user_notes = pool:condorpool
+transfer_executable = true
+transfer_input_files = predict_unanimityabs0.6.txt,count,/home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001/pegasus-worker-5.1.1-x86_64_rhel_8.tar.gz,/home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001/00/00/plankifier_ID0000001.meta,/home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001/00/00/stage_in_local_local_1_0.meta,/home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001/pegasus-lite-common.sh
+transfer_output_files = count.txt
+universe = vanilla
+when_to_transfer_output = ON_EXIT
++pegasus_generator = "Pegasus"
++pegasus_root_wf_uuid = "07f06090-75b8-4786-bab3-159806612d3a"
++pegasus_wf_uuid = "07f06090-75b8-4786-bab3-159806612d3a"
++pegasus_version = "5.1.1"
++pegasus_wf_name = "plankifier-wf-0"
++pegasus_wf_time = "20260116T010151+0000"
++pegasus_wf_xformation = "count"
++pegasus_wf_dax_job_id = "ID0000002"
++pegasus_wf_dag_job_id = "count_ID0000002"
++pegasus_job_class = 1
++pegasus_site = "condorpool"
++pegasus_job_runtime = 0
++pegasus_cores = 1
++pegasus_gpus = 1
++pegasus_cluster_size = 1
+queue
+######################################################################
+# END OF SUBMIT FILE
+######################################################################

@@ -1,0 +1,184 @@
+- invocation: True
+  version: 3.0
+  start: 2026-01-15T00:54:21.150+00:00
+  duration: 2.099
+  transformation: "pegasus::rc-client"
+  derivation: "null"
+  resource: "local"
+  wf-label: "plankifier-wf"
+  wf-stamp: "2026-01-15T00:51:38+00:00"
+  interface: enp161s0f0
+  hostaddr: 10.52.0.10
+  hostname: enos--o-compute-zen3-o--0
+  pid: 15512
+  uid: 1011
+  user: kiso
+  gid: 1011
+  group: kiso
+  umask: 0o0022
+  mainjob:
+    start: 2026-01-15T00:54:21.299+00:00
+    duration: 1.949
+    pid: 15522
+    usage:
+      utime: 3.339
+      stime: 0.550
+      maxrss: 195120
+      minflt: 85921
+      majflt: 20
+      nswap: 0
+      inblock: 0
+      outblock: 2256
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 7837
+      nivcsw: 13
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /usr/bin/pegasus-rc-client
+      mode: 0o100755
+      size: 614
+      inode: 93542
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2025-05-29T18:42:15+00:00
+      atime: 2026-01-15T00:54:06+00:00
+      ctime: 2026-01-15T00:42:47+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    argument_vector:
+      - "--prefix"
+      - "pegasus.catalog.replica.output"
+      - "--conf"
+      - "/home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001/pegasus.10564431568436117113.properties"
+      - "-v"
+      - "--meta"
+      - "/home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001/00/00/count_ID0000002.meta"
+      - "--insert"
+      - "/home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001/00/00/register_local_1_0.in"
+    procs:
+  jobids:
+    condor: 12.0
+  cwd: /home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001
+  usage:
+    utime: 0.020
+    stime: 0.111
+    maxrss: 6688
+    minflt: 234
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 2
+    nivcsw: 8
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: enos--o-compute-zen3-o--0
+    uname_release: 5.15.0-144-generic
+    uname_machine: x86_64
+    ram_total: 262470792
+    ram_free: 257558060
+    ram_shared: 5952
+    ram_buffer: 94608
+    swap_total: 0
+    swap_free: 0
+    cpu_count: 256
+    cpu_speed: 1500
+    cpu_vendor: AuthenticAMD
+    cpu_model: AMD EPYC 7763 64-Core Processor
+    load_min1: 0.24
+    load_min5: 0.33
+    load_min15: 0.61
+    procs_total: 2194
+    procs_running: 2
+    procs_sleeping: 1101
+    procs_other: 1091
+    procs_vmsize: 6107536
+    procs_rss: 592512
+    task_total: 2244
+    task_running: 2
+    task_sleeping: 1151
+    task_other: 1091
+  files:
+    stdin:
+      file_name: /dev/null
+      mode: 0o20666
+      size: 0
+      inode: 5
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-01-15T00:38:24+00:00
+      atime: 2026-01-15T00:38:24+00:00
+      ctime: 2026-01-15T00:38:24+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    stdout:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_15510/ks.out.NXtbL5
+      descriptor: 3
+      mode: 0o100600
+      size: 171
+      inode: 2088801
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-01-15T00:54:22+00:00
+      atime: 2026-01-15T00:54:21+00:00
+      ctime: 2026-01-15T00:54:22+00:00
+      uid: 1011
+      user: kiso
+      gid: 1011
+      group: kiso
+      data_truncated: false
+      data: |
+        2026.01.15 00:54:22.863 UTC:   Database version: '5.1.1' (sqlite:////home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001/plankifier-wf-0.replicas.db) 
+        
+    stderr:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_15510/ks.err.OgClRg
+      descriptor: 4
+      mode: 0o100600
+      size: 76
+      inode: 2088802
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-01-15T00:54:23+00:00
+      atime: 2026-01-15T00:54:21+00:00
+      ctime: 2026-01-15T00:54:23+00:00
+      uid: 1011
+      user: kiso
+      gid: 1011
+      group: kiso
+      data_truncated: false
+      data: |
+        #Successfully worked on    : 1 lines.
+        #Worked on total number of : 1 lines.
+        
+    metadata:
+      temporary_name: /var/spool/condor/local_univ_execute/dir_15510/ks.meta.vdrsA2
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 2088803
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-01-15T00:54:21+00:00
+      atime: 2026-01-15T00:54:21+00:00
+      ctime: 2026-01-15T00:54:21+00:00
+      uid: 1011
+      user: kiso
+      gid: 1011
+      group: kiso

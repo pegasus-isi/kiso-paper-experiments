@@ -1,0 +1,13 @@
+[
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "count.txt",
+   "id": 1,
+   "verify_checksum_remote": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///home/kiso/kiso-plankifier-experiment/scratch/kiso/pegasus/plankifier-wf/run0001/./count.txt" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///home/kiso/kiso-plankifier-experiment/output/count.txt" }
+   ] }
+]

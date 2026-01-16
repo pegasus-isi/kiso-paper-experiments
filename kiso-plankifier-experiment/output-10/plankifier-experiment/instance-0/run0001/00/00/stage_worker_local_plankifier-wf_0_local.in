@@ -1,0 +1,12 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "pegasus::worker",
+   "id": 1,
+   "src_urls": [
+     { "site_label": "condorpool", "url": "https://download.pegasus.isi.edu/pegasus/5.1.1/pegasus-worker-5.1.1-x86_64_rhel_8.tar.gz" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:////home/kiso/kiso-plankifier-experiment/kiso/pegasus/plankifier-wf/run0001/pegasus-worker-5.1.1-x86_64_rhel_8.tar.gz" }
+   ] }
+]

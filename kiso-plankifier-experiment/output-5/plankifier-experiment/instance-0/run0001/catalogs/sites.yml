@@ -1,0 +1,28 @@
+x-pegasus:
+  apiLang: python
+  createdBy: kiso
+  createdOn: 01-16-26T01:01:51Z
+pegasus: 5.0.4
+sites:
+- name: local
+  directories:
+  - type: sharedScratch
+    path: /home/kiso/kiso-plankifier-experiment/scratch
+    sharedFileSystem: false
+    fileServers:
+    - url: file:///home/kiso/kiso-plankifier-experiment/scratch
+      operation: all
+  - type: localStorage
+    path: /home/kiso/kiso-plankifier-experiment/output
+    sharedFileSystem: false
+    fileServers:
+    - url: file:///home/kiso/kiso-plankifier-experiment/output
+      operation: all
+- name: condorpool
+  directories: []
+  profiles:
+    condor:
+      universe: vanilla
+    pegasus:
+      style: condor
+      data.configuration: condorio

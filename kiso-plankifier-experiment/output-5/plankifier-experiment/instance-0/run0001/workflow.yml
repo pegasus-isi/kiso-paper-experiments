@@ -1,0 +1,49 @@
+x-pegasus:
+  apiLang: python
+  createdBy: kiso
+  createdOn: 01-16-26T01:01:51Z
+pegasus: 5.0.4
+name: plankifier-wf
+jobs:
+- type: job
+  name: plankifier
+  id: ID0000001
+  arguments:
+  - -modelfullnames
+  - /srv/plankifier/trained-models/conv2/keras_model.h5
+  - -weightnames
+  - /srv/plankifier/trained-models/conv2/bestweights.hdf5
+  - -testdirs
+  - /srv/plankifier/camera-images
+  - -thresholds
+  - '0.6'
+  - -ensMethods
+  - unanimity
+  - -predname
+  - ./predict
+  uses:
+  - lfn: predict_unanimityabs0.6.txt
+    type: output
+    stageOut: true
+    registerReplica: true
+  profiles:
+    condor:
+      requirements: DC_ID == "dc-1" && TARGET.Arch == "AARCH64"
+- type: job
+  name: count
+  id: ID0000002
+  stdout: count.txt
+  arguments:
+  - predict_unanimityabs0.6.txt
+  - count.txt
+  uses:
+  - lfn: count.txt
+    type: output
+    stageOut: true
+    registerReplica: true
+  - lfn: predict_unanimityabs0.6.txt
+    type: input
+jobDependencies:
+- id: ID0000001
+  children:
+  - ID0000002

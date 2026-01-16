@@ -1,0 +1,38 @@
+# Job            - name of the job
+# Try            - number representing the job instance run count
+# Site           - site where the job ran
+# Kickstart      - actual duration of the job instance in seconds on the
+#                  remote compute node
+# Mult           - multiplier factor specified by the user
+# Kickstart-Mult - Kickstart time multiplied by the multiplier factor
+# CPU-Time       - remote cpu time computed as the stime + utime
+# Post           - postscript time as reported by DAGMan
+# CondorQTime    - time between submission by DAGMan and the remote Grid
+#                  submission. It is an estimate of the time spent in the
+#                  condor q on the submit node
+# Resource       - time between the remote Grid submission and start of
+#                  remote execution. It is an estimate of the time job
+#                  spent in the remote queue
+# Runtime        - time spent on the resource as seen by Condor DAGMan.
+#                  Is always >= Kickstart
+# Seqexec        - time taken for the completion of a clustered job
+# Seqexec-Delay  - time difference between the time for the completion
+#                  of a clustered job and sum of all the individual
+#                  tasks Kickstart time
+# Exitcode       - exitcode for this job
+# Hostname       - name of the host where the job ran, as reported by
+#                  Kickstart
+# db8c34e9-1f9e-44fd-b4d7-6bd46fe696ba (plankifier-wf)
+Job                                      Try  Site         Kickstart    Mult   Kickstart-Mult   CPU-Time     Post   CondorQTime  Resource     Runtime      Seqexec      Seqexec-Delay   Exitcode   Hostname                                                  
+create_dir_plankifier-wf_0_local         1    local        2.127        1      2.127            0.127        0.0    5.0          -            2.0          -            -               0          enos--o-compute-zen3-o--0                                 
+stage_worker_local_plankifier-wf_0_local 1    local        3.002        1      3.002            0.226        0.0    5.0          -            3.0          -            -               0          enos--o-compute-zen3-o--0                                 
+stage_in_local_local_1_0                 1    local        2.224        1      2.224            0.224        0.0    0.0          -            2.0          -            -               0          enos--o-compute-zen3-o--0                                 
+plankifier_ID0000001                     1    condorpool   58.707       1      58.707           163.411      0.0    22.0         -            68.0         -            -               0          zun-7af547e3-c2d5-4ec9-a086-df99d78edd71-586db5bf4d-4prbx 
+stage_out_local_local_0_0                1    local        2.225        1      2.225            0.227        0.0    0.0          -            3.0          -            -               0          enos--o-compute-zen3-o--0                                 
+count_ID0000002                          1    condorpool   0.006        1      0.006            0.014        0.0    0.0          -            3.0          -            -               0          enos--o-compute-zen3-o--0                                 
+clean_up_local_level_3_0                 1    local        4.124        1      4.124            0.137        0.0    0.0          -            5.0          -            -               0          enos--o-compute-zen3-o--0                                 
+stage_out_local_local_1_0                1    local        2.229        1      2.229            0.232        0.0    0.0          -            3.0          -            -               0          enos--o-compute-zen3-o--0                                 
+register_local_0_0                       1    local        1.905        1      1.905            3.787        0.0    0.0          -            2.0          -            -               0          enos--o-compute-zen3-o--0                                 
+clean_up_local_level_4_0                 1    local        2.121        1      2.121            0.121        0.0    0.0          -            3.0          -            -               0          enos--o-compute-zen3-o--0                                 
+register_local_1_0                       1    local        1.879        1      1.879            3.583        0.0    0.0          -            3.0          -            -               0          enos--o-compute-zen3-o--0                                 
+cleanup_plankifier-wf_0_local            1    local        2.122        1      2.122            0.122        1.0    1.0          -            2.0          -            -               0          enos--o-compute-zen3-o--0                                 

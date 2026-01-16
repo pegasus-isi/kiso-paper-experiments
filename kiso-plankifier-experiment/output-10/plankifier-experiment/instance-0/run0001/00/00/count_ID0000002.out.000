@@ -1,0 +1,210 @@
+- invocation: True
+  version: 3.0
+  start: 2026-01-16T05:38:45.616+00:00
+  duration: 0.152
+  transformation: "count"
+  derivation: "ID0000002"
+  resource: "condorpool"
+  wf-label: "plankifier-wf"
+  wf-stamp: "2026-01-16T05:33:47+00:00"
+  interface: enp161s0f0
+  hostaddr: 10.52.2.208
+  hostname: enos--o-compute-zen3-o--0
+  pid: 16459
+  uid: 65534
+  user: nobody
+  gid: 65534
+  group: nogroup
+  umask: 0o0022
+  mainjob:
+    start: 2026-01-16T05:38:45.762+00:00
+    duration: 0.005
+    pid: 16460
+    usage:
+      utime: 0.009
+      stime: 0.003
+      maxrss: 3660
+      minflt: 687
+      majflt: 2
+      nswap: 0
+      inblock: 88
+      outblock: 8
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 12
+      nivcsw: 0
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /var/lib/condor/execute/dir_16242/count
+      mode: 0o100755
+      size: 151
+      inode: 2088467
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-01-16T05:38:44+00:00
+      atime: 2026-01-16T05:38:45+00:00
+      ctime: 2026-01-16T05:38:45+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+    argument_vector:
+      - "predict_unanimityabs0.6.txt"
+      - "count.txt"
+    procs:
+  jobids:
+    condor: 7.0
+  cwd: /var/lib/condor/execute/dir_16242
+  usage:
+    utime: 0.008
+    stime: 0.119
+    maxrss: 2696
+    minflt: 143
+    majflt: 0
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 2
+    nivcsw: 2
+  machine:
+    page-size: 4096
+    uname_system: linux
+    uname_nodename: enos--o-compute-zen3-o--0
+    uname_release: 5.15.0-144-generic
+    uname_machine: x86_64
+    ram_total: 262470772
+    ram_free: 257553296
+    ram_shared: 5952
+    ram_buffer: 94832
+    swap_total: 0
+    swap_free: 0
+    cpu_count: 256
+    cpu_speed: 1500
+    cpu_vendor: AuthenticAMD
+    cpu_model: AMD EPYC 7763 64-Core Processor
+    load_min1: 0.14
+    load_min5: 0.08
+    load_min15: 0.11
+    procs_total: 2196
+    procs_running: 1
+    procs_sleeping: 1106
+    procs_other: 1089
+    procs_vmsize: 6137508
+    procs_rss: 621648
+    task_total: 2245
+    task_running: 1
+    task_sleeping: 1155
+    task_other: 1089
+  files:
+    count.txt:
+      lfn: "count.txt"
+      file_name: /var/lib/condor/execute/dir_16242/count.txt
+      mode: 0o100644
+      size: 487
+      inode: 2088488
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-01-16T05:38:45+00:00
+      atime: 2026-01-16T05:38:45+00:00
+      ctime: 2026-01-16T05:38:45+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+      output: True
+      sha256: f9c9073a4ba331e00c50a6ec47f9f9be8d6345be6314b0dc37e61c075cb132ff
+      checksum_timing: 0.00
+    stdin:
+      file_name: /dev/null
+      mode: 0o20666
+      size: 0
+      inode: 5
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-01-16T04:56:40+00:00
+      atime: 2026-01-16T04:56:40+00:00
+      ctime: 2026-01-16T04:56:40+00:00
+      uid: 0
+      user: root
+      gid: 0
+      group: root
+    stdout:
+      file_name: /var/lib/condor/execute/dir_16242/count.txt
+      mode: 0o100644
+      size: 487
+      inode: 2088488
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-01-16T05:38:45+00:00
+      atime: 2026-01-16T05:38:45+00:00
+      ctime: 2026-01-16T05:38:45+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+    stderr:
+      temporary_name: /tmp/ks.err.DsQUGH
+      descriptor: 4
+      mode: 0o100600
+      size: 0
+      inode: 2088489
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-01-16T05:38:45+00:00
+      atime: 2026-01-16T05:38:45+00:00
+      ctime: 2026-01-16T05:38:45+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+    metadata:
+      temporary_name: /tmp/ks.meta.t2AXmQ
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 2088490
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-01-16T05:38:45+00:00
+      atime: 2026-01-16T05:38:45+00:00
+      ctime: 2026-01-16T05:38:45+00:00
+      uid: 65534
+      user: nobody
+      gid: 65534
+      group: nogroup
+
+---------------pegasus-multipart
+- integrity_verification_attempts:
+  - lfn: "predict_unanimityabs0.6.txt"
+    pfn: "predict_unanimityabs0.6.txt"
+    sha256: b4820338219f7507f8eef9379482a4c1148838905c15c2def1d9209d63c05dae
+    success: True
+  - lfn: "count"
+    pfn: "count"
+    sha256: 795584fdd09c5b4ca3bea717f29ea09838ddc6d2bb9ed43ffb1b35d4d41539c2
+    success: True
+- integrity_summary:
+    succeeded: 2
+    failed: 0
+    duration: 0.031
+
+---------------pegasus-multipart
+location:
+    geohash: 9ydq
+    ip: 129.114.108.231
+    latitude: '37.751'
+    longitude: '-97.822'
+    organization: TACCNET
+    subdomain: tacc.chameleoncloud.org

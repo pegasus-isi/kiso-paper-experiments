@@ -1,0 +1,5 @@
+Pegasus DAGMAN is /usr/lib/pegasus/python/Pegasus/cli/pegasus-dagman.py
+2026-01-16 01:49:43,176:INFO:pegasus-dagman(136): DAGMAN_COPY_TO_SPOOL is set to b'false\n'
+2026-01-16 01:49:43,178:INFO:pegasus-dagman(92): Launched Dagman with Pid 13053
+2026-01-16 01:49:43,179:INFO:pegasus-dagman(119): Launched Monitord with Pid 13054
+Executing condor dagman ... 

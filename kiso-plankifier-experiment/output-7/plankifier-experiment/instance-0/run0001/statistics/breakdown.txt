@@ -1,0 +1,44 @@
+# Transformation   - name of the transformation.
+# Type             - successful or failed
+# Count            - the number of times the invocations corresponding to
+#                    the transformation was executed.
+# Min(sec)         - the minimum invocation runtime value corresponding
+#                    to the transformation.
+# Max(sec)         - the maximum invocation runtime value corresponding
+#                    to the transformation.
+# Mean(sec)        - the mean of the invocation runtime corresponding
+#                    to the transformation.
+# Total(sec)       - the cumulative of invocation runtime corresponding
+#                    to the transformation.
+# Min (mem)        - the minimum of the max. resident set size (RSS) value corresponding
+#                    to the transformation. In MB.
+# Max (mem)        - the maximum of the max. resident set size (RSS) value corresponding
+#                    to the transformation. In MB.
+# Mean (mem)       - the mean of the max. resident set size (RSS) value corresponding
+#                    to the transformation. In MB.
+# Min (avg. cpu)   - the minimum of the average cpu utilization value corresponding
+#                    to the transformation.
+# Max (avg. cpu)   - the maximum of the average cpu utilization value corresponding
+#                    to the transformation.
+# Mean (avg. cpu)  - the mean of the average cpu utilization value corresponding
+#                    to the transformation.
+
+# db8c34e9-1f9e-44fd-b4d7-6bd46fe696ba (plankifier-wf)
+Transformation      Type       Count  Min (runtime)  Max (runtime)  Mean (runtime)        Total (runtime)        Min (mem)  Max (mem)  Mean (mem)  Min (avg. cpu)  Max (avg. cpu)  Mean (avg. cpu)  
+count               successful 1      0.006          0.006          0.006                 0.006                  3.664      3.664      3.664       233.33%         233.33%         233.33%          
+dagman::post        successful 12     0.0            1.0            0.083                 1.0                    -          -          -           -               -               -                
+pegasus::cleanup    successful 3      2.121          4.124          2.789                 8.367                  19.258     19.602     19.43       3.32%           5.75%           4.93%            
+pegasus::dirmanager successful 1      2.127          2.127          2.127                 2.127                  19.711     19.711     19.711      5.97%           5.97%           5.97%            
+pegasus::rc-client  successful 2      1.879          1.905          1.892                 3.784                  186.98     187.285    187.133     190.69%         198.79%         194.74%          
+pegasus::transfer   successful 4      2.224          3.002          2.42                  9.68                   19.656     19.852     19.731      7.53%           10.41%          9.55%            
+plankifier          successful 1      58.707         58.707         58.707                58.707                 697.391    697.391    697.391     278.35%         278.35%         278.35%          
+
+# All (All)
+Transformation      Type       Count  Min (runtime)  Max (runtime)  Mean (runtime)        Total (runtime)        Min (mem)  Max (mem)  Mean (mem)  Min (avg. cpu)  Max (avg. cpu)  Mean (avg. cpu)  
+count               successful 1      0.006          0.006          0.006                 0.006                  3.664      3.664      3.664       233.33%         233.33%         233.33%          
+dagman::post        successful 12     0.0            1.0            0.083                 1.0                    -          -          -           -               -               -                
+pegasus::cleanup    successful 3      2.121          4.124          2.789                 8.367                  19.258     19.602     19.43       3.32%           5.75%           4.93%            
+pegasus::dirmanager successful 1      2.127          2.127          2.127                 2.127                  19.711     19.711     19.711      5.97%           5.97%           5.97%            
+pegasus::rc-client  successful 2      1.879          1.905          1.892                 3.784                  186.98     187.285    187.133     190.69%         198.79%         194.74%          
+pegasus::transfer   successful 4      2.224          3.002          2.42                  9.68                   19.656     19.852     19.731      7.53%           10.41%          9.55%            
+plankifier          successful 1      58.707         58.707         58.707                58.707                 697.391    697.391    697.391     278.35%         278.35%         278.35%          
