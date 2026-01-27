@@ -1,0 +1,74 @@
+name: 30-node-htcondor-cluster
+
+deployment:
+  htcondor:
+    - kind: central-manager
+      labels:
+        - cm
+    - kind: submit
+      labels:
+        - submit
+    - kind: execute
+      labels:
+        - execute
+
+sites:
+  - kind: fabric
+    rc_file: secrets/fabric_rc
+    walltime: "2:00:00"
+    name_prefix: 30-node-htcondor-cluster
+    resources:
+      machines:
+        - labels:
+            - cm
+          site: WASH
+          image: default_ubuntu_22
+          flavour: big
+          number: 1
+        - labels:
+            - submit
+          site: UTAH
+          image: default_ubuntu_22
+          flavour: big
+          number: 1
+        - labels:
+            - execute
+          site: HAWI
+          image: default_ubuntu_22
+          flavour: big
+          number: 28
+      networks:
+        - labels:
+            - v4
+          kind: FABNetv4
+          site: WASH
+          nic:
+            kind: SharedNIC
+            model: ConnectX-6
+        - labels:
+            - v4
+          kind: FABNetv4
+          site: UTAH
+          nic:
+            kind: SharedNIC
+            model: ConnectX-6
+        - labels:
+            - v4
+          kind: FABNetv4
+          site: HAWI
+          nic:
+            kind: SharedNIC
+            model: ConnectX-6
+
+experiments:
+  - kind: shell
+    name: shell-experiment
+    scripts:
+      - labels:
+          - submit
+        script: |
+          echo "Condor Q"
+          condor_q
+
+          echo "Condor Status"
+          condor_status
